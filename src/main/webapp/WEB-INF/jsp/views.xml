@@ -1,0 +1,42 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="template" template="/WEB-INF/jsp/common-layout.jsp">
+		<put-attribute name="mainmenu" value="/WEB-INF/jsp/tiles/mainmenu.jsp" />
+	</definition>
+
+	<definition name="index" extends="template">
+		<put-attribute name="body" value="/WEB-INF/jsp/tiles/greeting.jsp" />
+	</definition>
+
+	<definition name="professor/edit" extends="template">
+		<put-attribute name="body" value="/WEB-INF/jsp/tiles/edit_professor.jsp" />
+	</definition>
+	
+	<definition name="message" extends="template">
+    	<put-attribute name="body" value="/WEB-INF/jsp/tiles/plain_message.jsp" />
+  	</definition>
+	
+  <definition name="professor/list" extends="template">
+    <put-attribute name="submenu" value="/WEB-INF/jsp/tiles/person_header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/jsp/tiles/list_people.jsp" />
+  </definition>
+
+  <definition name="student/edit" extends="template">
+    <put-attribute name="body" value="/WEB-INF/jsp/tiles/edit_student.jsp" />
+  </definition>
+
+  <definition name="student/list" extends="template">
+    <put-attribute name="submenu" value="/WEB-INF/jsp/tiles/person_header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/jsp/tiles/list_people.jsp" />
+  </definition>
+
+  <definition name="seminar/edit" extends="template">
+    <put-attribute name="body" value="/WEB-INF/jsp/tiles/edit_seminar.jsp" />
+  </definition>
+  
+  <definition name="seminar/list" extends="template">
+    <put-attribute name="submenu" value="/WEB-INF/jsp/tiles/seminar_header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/jsp/tiles/list_seminars.jsp" />
+  </definition>
+</tiles-definitions>

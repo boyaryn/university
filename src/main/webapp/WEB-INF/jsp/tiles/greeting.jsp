@@ -1,0 +1,1 @@
+Welcome to University Seminars Subscription Website
